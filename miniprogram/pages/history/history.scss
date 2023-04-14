@@ -1,0 +1,30 @@
+.container {
+  font-size: 30rpx;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 100rpx;
+    line-height: 100rpx;
+    padding: 20rpx;
+
+    text {
+      margin: 0 20rpx;
+    }
+
+    .icon-close {
+      font-size: 35rpx;
+    }
+  }
+
+  .item {
+    margin: 30rpx;
+    view{
+      margin: 5rpx 0;
+      &:nth-child(2){
+        color: royalblue;
+      }
+    }
+    
+  }
+}

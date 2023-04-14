@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="selectcontent" >
+    <text bindtap="goTochange">翻译成{{curLanchs}}</text>
+    <text class="iconfont icon-down"></text>
+  </view>
+  <view class="tranlatext" bindblur="translatetxt">
+   <textarea placeholder="请输入需要翻译的文本" bindblur="translatetxt" 
+   model:value="{{query}}"  
+   bindinput="default" ></textarea>
+  </view>
+  <view class="restxt">
+    <view>
+      译文
+    </view>
+    <view class="content">
+      {{content}}
+    </view>
+  </view>
+</view>
